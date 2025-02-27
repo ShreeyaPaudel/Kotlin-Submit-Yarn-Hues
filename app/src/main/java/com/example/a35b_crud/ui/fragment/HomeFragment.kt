@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.btnBuyNowHat.setOnClickListener {
-            navigateToCart("Knitted Hat to rescue you from the wind", "$15", R.drawable.hat)
+            navigateToCart("Knitted Hat to rescue you from the wind", "Rs.1000", R.drawable.hat)
         }
 
         binding.btnBuyNowPurple.setOnClickListener {
