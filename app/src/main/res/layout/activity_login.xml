@@ -32,7 +32,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_border"
         android:padding="8dp"
-        android:hint="Enter Email" />
+        android:hint="Enter Email"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/editPassword"
@@ -45,7 +46,8 @@
         android:padding="8dp"
         android:ems="10"
         android:inputType="text"
-        android:hint="Enter Password" />
+        android:hint="Enter Password"
+        android:fontFamily="times new roman"/>
 
     <TextView
         android:id="@+id/btnForget"
@@ -55,6 +57,7 @@
         android:textSize="10dp"
         android:textColorHint="#6C84A2"
         android:hint="Forget Password?"
+        android:fontFamily="times new roman"
         />
 
     <Button
@@ -64,6 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColorHint="@color/white"
+        android:fontFamily="times new roman"
         android:hint="Login" />
 
     <TextView
@@ -74,5 +78,6 @@
         android:textSize="10dp"
         android:textColorHint="#6C84A2"
         android:hint="Don't have an account? Click here."
+        android:fontFamily="times new roman"
         />
 </LinearLayout>
