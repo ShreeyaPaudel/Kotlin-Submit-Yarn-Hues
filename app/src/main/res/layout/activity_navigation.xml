@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.NavigationActivity">
+
+    <!-- Hero Image (Banner) -->
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coloourfulyarn"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="New Arrivals" />
+
+    <TextView
+        android:id="@+id/newArrivalsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Arrivals"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="@id/heroImage"
+        app:layout_constraintBottom_toBottomOf="@id/heroImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Collage Image -->
+    <ImageView
+        android:id="@+id/imageViewCollage"
+        android:layout_width="263dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/collage"
+        app:layout_constraintTop_toBottomOf="@+id/heroImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Grid Layout for Images -->
+<!--    <GridLayout-->
+<!--        android:id="@+id/imageGrid"-->
+<!--        android:layout_width="362dp"-->
+<!--        android:layout_height="238dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:alignmentMode="alignMargins"-->
+<!--        android:columnCount="3"-->
+<!--        android:padding="8dp"-->
+<!--        android:rowCount="2"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/imageViewCollage">-->
+
+
+
+<!--            &lt;!&ndash; Image 1 &ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="6dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/redwhitehat" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            &lt;!&ndash; Image 2 &ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="6dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/socks" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            &lt;!&ndash; Image 3 &ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="6dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/muffler" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            &lt;!&ndash; Image 4 &ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="6dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/earwarmerpurple" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            &lt;!&ndash; Image 5 &ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="6dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/earwarmerred" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            &lt;!&ndash; Image 6 &ndash;&gt;-->
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_margin="8dp"-->
+<!--                app:cardCornerRadius="16dp"-->
+<!--                app:cardElevation="6dp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/redhat" />-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--        </GridLayout>-->
+
+        <!-- Image Cards -->
+        <!-- Card Views with images go here (same as your original XML) -->
+
+
+    <!-- FrameLayout for Fragment Container -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCollage"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/nav_bar"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

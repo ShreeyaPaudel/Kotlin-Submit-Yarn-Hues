@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_option_3"
+    tools:context=".ui.activity.RegisterActivity">
+
+    <TextView
+        android:id="@+id/signuppg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="100dp"
+        android:hint="Sign in to Yarn Hues!"
+        android:textColorHint="#6C84A2"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="times new roman"/>
+
+    <EditText
+        android:id="@+id/registerFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:ems="10"
+        android:background="@drawable/edit_text_border"
+        android:padding="8dp"
+        android:inputType="text"
+        android:hint="first name" />
+
+    <EditText
+        android:id="@+id/registerLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="last name" />
+
+    <EditText
+        android:id="@+id/registerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="address" />
+
+    <EditText
+        android:id="@+id/registerPhonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="phone number" />
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="email" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/edit_text_border"
+        android:padding="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="password" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6C85A3"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:hint="Sign Up" />
+</LinearLayout>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Short Description -->
+
+        <TextView
+            android:id="@+id/tvYarnHuesDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="times new roman"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="16dp"
+            android:text="Welcome to Yarn Hues - your go-to destination for eco-friendly and beautifully crafted yarns."
+            android:textAlignment="center"
+            android:textColor="#6F1313"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bluryarn"/>
+
+        <!-- Product Grid Layout -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:spacing="19dp"
+            android:layout_marginTop="10dp">
+
+            <!-- Product 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgProduct1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/muffler"/>
+
+                    <Button
+                        android:id="@+id/btnBuyNow1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Product 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgProduct2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/redwhitehat"/>
+
+                    <Button
+                        android:id="@+id/btnBuyNow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgProduct3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/earwarmerred"/>
+
+                    <Button
+                        android:id="@+id/btnBuyNow3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgProduct4"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hat"/>
+
+                    <Button
+                        android:id="@+id/btnBuyNow4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Product 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgProduct6"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/socks"/>
+
+                    <Button
+                        android:id="@+id/btnBuyNow6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgProduct7"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/earwarmerpurple"/>
+
+                    <Button
+                        android:id="@+id/btnBuyNow7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="8dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <!-- About Us Section -->
+        <TextView
+            android:id="@+id/tvAboutUsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:fontFamily="times new roman"
+            android:textColor="#6F1313"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imgAboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pinkyarn"/>
+
+        <TextView
+            android:id="@+id/tvAboutUsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="times new roman"
+            android:textColor="@color/black"
+            android:text="We support sustainable and ethical practices by providing high-quality, home-made yarns crafted by women artisans."
+            android:paddingTop="8dp"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/imgAboutUs2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/maroon2bg"/>
+
+        <!-- Footer -->
+        <TextView
+            android:id="@+id/tvContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textAlignment="center"
+            android:fontFamily="times new roman"
+            android:textColor="#6F1313"
+
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="24dp"/>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+
+            android:fontFamily="times new roman"
+            android:textColor="@color/black"
+            android:text="Email: shreeya.paudel.8e@gmail.com"
+           />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone: +977 9813780846"
+            android:textSize="14sp"
+            android:fontFamily="times new roman"
+            android:textColor="@color/black"
+            android:paddingBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>
