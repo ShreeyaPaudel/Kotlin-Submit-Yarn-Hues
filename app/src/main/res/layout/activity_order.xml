@@ -23,6 +23,7 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:fontFamily="times new roman"
 
         />
 
@@ -38,6 +39,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginTop="50dp"
+        android:fontFamily="times new roman"
         />
 
     <ImageView
@@ -59,6 +61,7 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:fontFamily="times new roman"
 
         />
 
@@ -73,7 +76,7 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:fontFamily=""
+        android:fontFamily="times new roman"
 
         />
 

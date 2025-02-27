@@ -16,7 +16,8 @@
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/edit_text_border"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/editLastName"
@@ -27,7 +28,8 @@
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/edit_text_border"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/editAddress"
@@ -38,7 +40,8 @@
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/edit_text_border"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/editPhone"
@@ -49,7 +52,8 @@
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/edit_text_border"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="times new roman"/>
 
     <Button
         android:id="@+id/btnSaveProfile"
@@ -59,5 +63,6 @@
         android:backgroundTint="#074D46"
         android:layout_marginStart="120dp"
         android:layout_marginTop="20dp"
-        android:textColorHint="@color/white"/>
+        android:textColorHint="@color/white"
+        android:fontFamily="times new roman"/>
 </LinearLayout>

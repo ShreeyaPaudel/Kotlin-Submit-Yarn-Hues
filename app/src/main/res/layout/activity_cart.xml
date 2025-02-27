@@ -25,7 +25,8 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:fontFamily="times new roman"/>
 
     <TextView
         android:id="@+id/itemPrice"
@@ -37,7 +38,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginStart="140dp"
         android:layout_marginEnd="80dp"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/addressInput"
@@ -48,7 +50,8 @@
         android:layout_marginStart="80dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/edit_text_border"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="times new roman"/>
 
     <TextView
         android:id="@+id/deliveryMethod"
@@ -60,7 +63,8 @@
         android:background="@drawable/edit_text_border"
         android:padding="8dp"
         android:textSize="16sp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:fontFamily="times new roman"/>
 
     <Button
         android:id="@+id/selectDeliveryDate"
@@ -70,7 +74,8 @@
         android:backgroundTint="#6C85A3"
         android:layout_marginStart="100dp"
         android:layout_marginTop="10dp"
-        android:textColorHint="@color/white"/>
+        android:textColorHint="@color/white"
+        android:fontFamily="times new roman"/>
 
     <TextView
         android:id="@+id/deliveryDate"
@@ -82,7 +87,8 @@
         android:text="No date selected"
         android:textColor="@color/black"
         android:textColorHint="@color/white"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:fontFamily="times new roman"/>
 
     <Button
         android:id="@+id/orderButton"
@@ -92,5 +98,6 @@
         android:backgroundTint="#6C85A3"
         android:layout_marginStart="125dp"
         android:layout_marginTop="10dp"
-        android:textColorHint="@color/white"/>
+        android:textColorHint="@color/white"
+        android:fontFamily="times new roman"/>
 </LinearLayout>
