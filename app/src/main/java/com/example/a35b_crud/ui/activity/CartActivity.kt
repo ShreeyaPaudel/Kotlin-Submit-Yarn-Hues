@@ -1,6 +1,7 @@
 package com.example.a35b_crud.ui.activity
 
 import android.app.DatePickerDialog
+import android.content.Context
 import android.content.Intent
 import android.icu.util.Calendar
 import android.os.Bundle
@@ -12,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.a35b_crud.R
 import com.example.a35b_crud.databinding.ActivityCartBinding
 import com.example.a35b_crud.ui.fragment.HomeFragment
+import com.example.a35b_crud.ui.fragment.ProfileFragment
 
 class CartActivity : AppCompatActivity() {
     lateinit var binding: ActivityCartBinding
@@ -23,8 +25,8 @@ class CartActivity : AppCompatActivity() {
         binding = ActivityCartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val itemName = intent.getStringExtra("itemName")
-        val itemPrice = intent.getStringExtra("itemPrice")
+        val itemName = intent.getStringExtra("itemName") ?: "No Item"
+        val itemPrice = intent.getStringExtra("itemPrice")?: "0"
         val itemImage = intent.getIntExtra("itemImage", 0) // Assuming it's a drawable resource
 
         binding.itemName.text = itemName
@@ -49,20 +51,33 @@ class CartActivity : AppCompatActivity() {
 
         binding.orderButton.setOnClickListener {
             val address = binding.addressInput.text.toString()
+            val deliveryDate = binding.deliveryDate.text.toString()
 
-            if (address.isEmpty()) {
-                Toast.makeText(this, "Please enter your address", Toast.LENGTH_SHORT).show()
+            if (address.isEmpty() || deliveryDate.isEmpty()) {
+                Toast.makeText(this, "Please enter address and select a delivery date", Toast.LENGTH_SHORT).show()
             } else {
+                saveOrderToPreferences(itemName, itemPrice, itemImage, address, deliveryDate)
                 Toast.makeText(this, "Order Placed!", Toast.LENGTH_SHORT).show()
 
-                // Navigate back to Home or Order Summary
-                val intent = Intent(this, HomeFragment::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-                startActivity(intent)
+                // Navigate to Profile (or any other relevant page)
+                startActivity(Intent(this, ProfileFragment::class.java))
                 finish()
             }
 
 
+
         }
+    }
+
+    private fun saveOrderToPreferences(name: String, price: String, image: Int, address: String, date: String) {
+        val sharedPreferences = getSharedPreferences("Orders", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+
+        editor.putString("order_name", name)
+        editor.putString("order_price", price)
+        editor.putInt("order_image", image)
+        editor.putString("order_address", address)
+        editor.putString("order_date", date)
+        editor.apply()
     }
 }

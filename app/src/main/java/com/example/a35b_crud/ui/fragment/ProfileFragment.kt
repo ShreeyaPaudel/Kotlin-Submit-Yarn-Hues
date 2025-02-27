@@ -12,6 +12,7 @@ import com.example.a35b_crud.databinding.FragmentProfileBinding
 import com.example.a35b_crud.repository.UserRepositoryImpl
 import com.example.a35b_crud.ui.activity.EditProfileActivity
 import com.example.a35b_crud.ui.activity.LoginActivity
+import com.example.a35b_crud.ui.activity.OrderActivity
 import com.example.a35b_crud.utils.LoadingUtils
 import com.example.a35b_crud.viewmodel.UserViewModel
 
@@ -61,6 +62,12 @@ class ProfileFragment : Fragment() {
 
             }
         }
+
+        binding.myorders.setOnClickListener {
+            val intent = Intent(requireContext(), OrderActivity::class.java)
+            startActivity(intent)
+        }
+
 
         // Handle Edit Profile Click
         binding.editProfile.setOnClickListener {
