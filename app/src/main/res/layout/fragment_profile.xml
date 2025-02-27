@@ -165,13 +165,15 @@
                 <TextView
                     android:text="Notification"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"android:fontFamily="times new roman"/>
+                    android:layout_height="wrap_content"
+                    android:fontFamily="times new roman"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_margin="10dp"
             android:id="@+id/logout"
+
             app:cardCornerRadius="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">

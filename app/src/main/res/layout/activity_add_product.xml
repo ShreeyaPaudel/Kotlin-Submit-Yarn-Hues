@@ -67,5 +67,6 @@
         android:backgroundTint="#6C85A3"
         android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
-        android:textColorHint="@color/white"/>
+        android:textColorHint="@color/white"
+        android:fontFamily="times new roman"/>
 </LinearLayout>
