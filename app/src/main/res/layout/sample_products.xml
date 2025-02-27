@@ -58,7 +58,8 @@
                 android:textColor="#6F1313"
                 android:text="Product name"
                 app:layout_constraintStart_toEndOf="@+id/getImage"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="times new roman"/>
 
             <TextView
                 android:id="@+id/displayPrice"
@@ -69,7 +70,8 @@
                 android:textColor="#6F1313"
                 android:text="Product price"
                 app:layout_constraintStart_toEndOf="@+id/getImage"
-                app:layout_constraintTop_toBottomOf="@+id/displayDesc" />
+                app:layout_constraintTop_toBottomOf="@+id/displayDesc"
+                android:fontFamily="times new roman"/>
 
             <TextView
                 android:id="@+id/displayDesc"
@@ -80,7 +82,8 @@
                 android:text="Product desc"
                 android:textColor="#6F1313"
                 app:layout_constraintStart_toEndOf="@+id/getImage"
-                app:layout_constraintTop_toBottomOf="@+id/displayName" />
+                app:layout_constraintTop_toBottomOf="@+id/displayName"
+                android:fontFamily="times new roman"/>
 
             <TextView
                 android:id="@+id/lblEdit"
@@ -89,7 +92,8 @@
                 android:text="Edit"
                 android:textColor="#6F1313"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                android:fontFamily="times new roman"/>
 
             <ProgressBar
                 android:id="@+id/progressBar2"
@@ -100,7 +104,8 @@
                 app:layout_constraintEnd_toEndOf="@+id/getImage"
                 app:layout_constraintHorizontal_bias="0.23"
                 app:layout_constraintStart_toStartOf="@+id/getImage"
-                app:layout_constraintTop_toTopOf="@+id/getImage" />
+                app:layout_constraintTop_toTopOf="@+id/getImage"
+                android:fontFamily="times new roman"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
