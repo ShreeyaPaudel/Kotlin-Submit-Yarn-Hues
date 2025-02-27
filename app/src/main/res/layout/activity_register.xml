@@ -34,7 +34,8 @@
         android:background="@drawable/edit_text_border"
         android:padding="8dp"
         android:inputType="text"
-        android:hint="first name" />
+        android:hint="first name"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/registerLname"
@@ -47,7 +48,8 @@
         android:padding="8dp"
         android:ems="10"
         android:inputType="text"
-        android:hint="last name" />
+        android:hint="last name"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/registerAddress"
@@ -60,7 +62,8 @@
         android:padding="8dp"
         android:ems="10"
         android:inputType="text"
-        android:hint="address" />
+        android:hint="address"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/registerPhonenumber"
@@ -73,7 +76,8 @@
         android:padding="8dp"
         android:ems="10"
         android:inputType="text"
-        android:hint="phone number" />
+        android:hint="phone number"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/registerEmail"
@@ -86,7 +90,8 @@
         android:padding="8dp"
         android:ems="10"
         android:inputType="text"
-        android:hint="email" />
+        android:hint="email"
+        android:fontFamily="times new roman"/>
 
     <EditText
         android:id="@+id/registerPassword"
@@ -99,7 +104,8 @@
         android:padding="8dp"
         android:ems="10"
         android:inputType="text"
-        android:hint="password" />
+        android:hint="password"
+        android:fontFamily="times new roman"/>
 
     <Button
         android:id="@+id/btnSignup"
@@ -109,5 +115,6 @@
         android:layout_marginStart="165dp"
         android:layout_marginTop="20dp"
         android:textColorHint="@color/white"
-        android:hint="Sign Up" />
+        android:hint="Sign Up"
+        android:fontFamily="times new roman"/>
 </LinearLayout>
