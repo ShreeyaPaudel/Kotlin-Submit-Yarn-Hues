@@ -6,12 +6,49 @@
     android:fillViewport="true"
     android:orientation="vertical">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
+        <!-- Hero Image (Banner) -->
+        <ImageView
+            android:id="@+id/heroImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coloourfulyarn"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="New Arrivals" />
+
+        <TextView
+            android:id="@+id/newArrivalsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Arrivals"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toTopOf="@id/heroImage"
+            app:layout_constraintBottom_toBottomOf="@id/heroImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:fontFamily="times new roman"/>
+
+        <!-- Collage Image -->
+        <ImageView
+            android:id="@+id/imageViewCollage"
+            android:layout_width="263dp"
+            android:layout_height="164dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/collage"
+            app:layout_constraintTop_toBottomOf="@+id/heroImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
         <!-- Short Description -->
 
         <TextView

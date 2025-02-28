@@ -7,41 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.NavigationActivity">
 
-    <!-- Hero Image (Banner) -->
-    <ImageView
-        android:id="@+id/heroImage"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/coloourfulyarn"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="New Arrivals" />
 
-    <TextView
-        android:id="@+id/newArrivalsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Arrivals"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/white"
-        app:layout_constraintTop_toTopOf="@id/heroImage"
-        app:layout_constraintBottom_toBottomOf="@id/heroImage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:fontFamily="times new roman"/>
-
-    <!-- Collage Image -->
-    <ImageView
-        android:id="@+id/imageViewCollage"
-        android:layout_width="263dp"
-        android:layout_height="164dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/collage"
-        app:layout_constraintTop_toBottomOf="@+id/heroImage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Grid Layout for Images -->
 <!--    <GridLayout-->
@@ -157,13 +123,13 @@
 
     <!-- FrameLayout for Fragment Container -->
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/frameLayout"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewCollage"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
