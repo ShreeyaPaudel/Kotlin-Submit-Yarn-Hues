@@ -60,7 +60,7 @@ class CartActivity : AppCompatActivity() {
                 Toast.makeText(this, "Order Placed!", Toast.LENGTH_SHORT).show()
 
                 // Navigate to Profile (or any other relevant page)
-                startActivity(Intent(this, ProfileFragment::class.java))
+                startActivity(Intent(this, OrderActivity::class.java))
                 finish()
             }
 
