@@ -12,6 +12,7 @@ import com.example.a35b_crud.databinding.ActivityLoginBinding
 import com.example.a35b_crud.repository.UserRepositoryImpl
 import com.example.a35b_crud.utils.LoadingUtils
 import com.example.a35b_crud.viewmodel.UserViewModel
+import com.google.firebase.database.core.view.View
 
 class LoginActivity : AppCompatActivity() {
     lateinit var binding: ActivityLoginBinding
@@ -41,8 +42,17 @@ class LoginActivity : AppCompatActivity() {
                     loadingUtils.dismiss()
                     var intent = Intent(this@LoginActivity,NavigationActivity::class.java)
                     startActivity(intent)
+
+
+
+
+
                     finish()
                 }else{
+
+                    binding.displayLoginResult.text ="Login failed"
+                    binding.displayLoginResult.visibility = android.view.View.GONE
+
                     Toast.makeText(applicationContext,message, Toast.LENGTH_LONG).show()
                     loadingUtils.dismiss()
 
