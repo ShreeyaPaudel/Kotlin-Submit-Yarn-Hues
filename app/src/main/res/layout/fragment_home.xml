@@ -24,21 +24,25 @@
             app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="New Arrivals" />
 
+        <!-- Collage Image -->
+        <!-- Short Description -->
+
         <TextView
             android:id="@+id/newArrivalsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Arrivals"
+            android:layout_marginTop="0dp"
+            android:fontFamily="times new roman"
+            android:text="New Arrivals!"
+            android:layout_marginStart="90dp"
+            android:textColor="#3D5C6E"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:textColor="@android:color/white"
-            app:layout_constraintTop_toTopOf="@id/heroImage"
             app:layout_constraintBottom_toBottomOf="@id/heroImage"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:fontFamily="times new roman"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Collage Image -->
         <ImageView
             android:id="@+id/imageViewCollage"
             android:layout_width="263dp"
@@ -46,29 +50,28 @@
             android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
             android:src="@drawable/collage"
-            app:layout_constraintTop_toBottomOf="@+id/heroImage"
+            android:layout_marginStart="53dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-        <!-- Short Description -->
+            app:layout_constraintTop_toBottomOf="@+id/heroImage" />
 
         <TextView
             android:id="@+id/tvYarnHuesDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="times new roman"
             android:layout_marginTop="10dp"
+            android:fontFamily="times new roman"
             android:paddingBottom="16dp"
             android:text="Welcome to Yarn Hues - your go-to destination for eco-friendly and beautifully crafted yarns."
             android:textAlignment="center"
             android:textColor="#6F1313"
             android:textSize="18sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_marginStart="45dp"
+            android:layout_marginStart="42dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/bluryarn"/>
 

@@ -24,7 +24,7 @@ class AuthInstrumentedTest {
     @Test
     fun checkLogin() {
         onView(withId(R.id.editEmail)).perform(
-            typeText("ram@gmail.com")
+            typeText("shreeya@gmail.com")
         )
 
         onView(withId(R.id.editPassword)).perform(
