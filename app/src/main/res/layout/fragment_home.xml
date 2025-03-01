@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:fontFamily="times new roman"
-            android:text="New Arrivals!"
+            android:text="New Arrivals!!"
             android:layout_marginStart="90dp"
             android:textColor="#3D5C6E"
             android:textSize="24sp"
