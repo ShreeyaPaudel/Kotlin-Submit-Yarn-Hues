@@ -28,7 +28,7 @@ class NavigationActivity : AppCompatActivity() {
     }
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    //override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         navigationBinding = ActivityNavigationBinding.inflate(layoutInflater)
